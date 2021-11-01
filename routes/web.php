@@ -30,3 +30,4 @@ Route::get('login/facebook/callback', [App\Http\Controllers\Auth\LoginController
 
 Route::post('/home', 'App\Http\Controllers\StockController@getquote')->name('home.getquote');
 Route::post('/storequote', 'App\Http\Controllers\StockController@storequote')->name('home.storequote');
+Route::get('/errorquote', 'App\Http\Controllers\StockController@errorquote')->name('home.errorquote');

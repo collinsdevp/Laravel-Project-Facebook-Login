@@ -24,6 +24,12 @@
                     @endif
                     </div>
 
+                    <div>
+                    @if(session()->has('errorquote'))
+                    <div class="py-4 px-2 bg-red-300">{{session()->get('errorquote')}}</div>
+                    @endif
+                    </div>
+
                     <br/><br/>
                     <h1>Enter Stock Quote: </h1>
                     <br/>
