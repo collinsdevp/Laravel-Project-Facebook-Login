@@ -12,7 +12,7 @@ class StockController extends Controller
     public function getquote(Request $request){
         
         if(!$request->quote){
-            return redirect()->back()->with('error','Please enter a stock quote');
+            return redirect()->back()->with('error','Please enter a stock quote.');
         }
 
         $json = file_get_contents('https://www.alphavantage.co/query?function=GLOBAL_QUOTE&symbol='.$request->quote.'&apikey=0O18XUJW9P8QVGQJ');

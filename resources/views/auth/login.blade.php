@@ -46,11 +46,6 @@
                             </div>
                         </div>
 
-                        <hr/>
-
-                        <div class="form-group row">
-                        <a href="{{ route('login.facebook') }}" class="btn btn-primary btn-block"><i class="fab fa-facebook mx-3"></i>Login with Facebook</a>
-                                </div>
                         </div>
 
 
@@ -69,6 +64,13 @@
                                 <br/>
                             </div>
                         </div>
+                        
+                        <hr/>
+
+                        <div class="">
+                        <a href="{{ route('login.facebook') }}" class="btn btn-primary btn-block"><i class="fab fa-facebook mx-3"></i>Login with Facebook</a>
+                        </div>
+                        <br/>
                     </form>
                 </div>
             </div>
